@@ -2360,22 +2360,21 @@
           <td colspan="2">
             <div class="ssd_resource_container">
               <!-- {% if (storage['ssd'].length > 0) { %} -->
-                <table>
-                  <col width="60%" />
-                  <col width="40%" />
-                  <col width="" />
                   <!-- {% $.each(storage['ssd'], function () { %} -->
-                  <tr>
-                    <td>Path: {%= h(this.path) %}</td>
-                    <td>{%= h(this.quotaMb != 'none' ? ((this.quotaMb * 1024) + ' GB') : '[no&nbsp;quota]') %}</td>
-
-                    <td><a href="javascript:ServersSection.startRemoveLocationDialog('{%= node %}', '{%= h(this.path) %}');">Remove</a></td>
-                  </tr>
+              <div class="resource-row">
+                <div>Path: {%= h(this.path) %}</div>
+                <div>
+                  {%= h(this.quotaMb != 'none' ? ((this.quotaMb * 1024) + ' GB') : '[no&nbsp;quota]') %}
+                </div>
+                <div>
+                  <a href="javascript:ServersSection.startRemoveLocationDialog('{%= node %}', '{%= h(this.path) %}');">Remove</a>
+                </div>
+                <br style="clear:both;" />
                   <!-- {% }); %} -->
-                </table>
               <!-- {% } else { %} -->
                 None Configured
               <!-- {% }; %} -->
+              </div>
             </div>
           </td>
         </tr>
@@ -2392,20 +2391,18 @@
           <td colspan="2">
             <div class="hdd_resource_container">
               <!-- {% if (storage['hdd'].length > 0) { %} -->
-                <table>
-                  <col width="60%" />
-                  <col width="40%" />
-                  <col width="" />
                   <!-- {% $.each(storage['hdd'], function () { %} -->
-                  <tr>
-                    <td>Path: {%= h(this.path) %}</td>
-                    <td>{%= h(this.quotaMb != 'none' ? ((this.quotaMb * 1024) + ' GB') : '[unlimited]') %}</td>
-                    <td>
+                  <div class="resource-row">
+                    <div>Path: {%= h(this.path) %}</div>
+                    <div>
+                      {%= h(this.quotaMb != 'none' ? ((this.quotaMb * 1024) + ' GB') : '[unlimited]') %}
+                    </div>
+                    <div>
                       <!-- <a href="javascript:NodeDialog.startRemoveLocationDialog('{%= node %}', '{%= h(this.path) %}');">Remove</a> -->
-                    </td>
-                  </tr>
+                    </div>
+                    <br style="clear:both;" />
+                  </div>
                   <!-- {% }); %} -->
-                </table>
               <!-- {% } else { %} -->
                 none configured
               <!-- {% }; %} -->
