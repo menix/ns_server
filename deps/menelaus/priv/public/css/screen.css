@@ -982,4 +982,26 @@ html body .overlayed {z-index:999 !important;}
 
 #about-close {line-height:31px !important;}
 
-.failover_server {position:relative !important; /*float:none !important;*/ display:block;}
+.failover_server {position:relative !important; float:none !important; display:block;}
+
+.warning_holder {padding:5px 20px;}
+.warning_block {}
+.warning_block .topper {height:5px; padding:0 0 0 33px; background:url(../images/warning_bg.png) 0 0 no-repeat;}
+.warning_block .topper div {padding:0 7px 0 0; background:url(../images/warning_bg.png) 100% -5px no-repeat;}
+.warning_block .topper div div {height:5px; background:url(../images/warning_bg.png) 0 -10px repeat-x; position:relative;}
+.warning_block .topper .warning_arrow {display:block; width:29px; height:20px; background:url(../images/warning_arrow.png) 0 0 no-repeat; position:absolute; left:70px; bottom:4px;}
+
+.warning_block .middle {}
+.warning_block .middle table {width:100%; border-collapse:collapse;}
+.warning_block .middle table td {padding:0px !important;}
+.warning_block .middle table .left_side {width:33px !important; background:url(../images/warning_side_bg.png) 0 0 repeat-y;}
+.warning_block .middle table .left_side span {display:block; width:17px; height:15px; background:url(../images/warning_block_icon.png) 0 0 no-repeat; margin:2px 0 0 7px;}
+.warning_block .middle table .right_side {width:7px !important; background:url(../images/warning_side_bg.png) 100% 0 repeat-y;}
+.warning_block .middle table .center_side {background:none #f9f9f9; width:auto !important; font-size:11px; color:#f88628;}
+.warning_block .middle table .center_side ul {padding:0 0 0 10px; position:relative; top:-3px;}
+.warning_block .middle table .center_side ul li {display:block; padding:0 0 0 8px; background:url(../images/bullet_1.gif) 0 3px no-repeat; margin:0 0 3px 0;}
+
+.warning_block .footer {height:7px; overflow:hidden; padding:0 0 0 33px; background:url(../images/warning_bg.png) 0 -15px no-repeat;}
+.warning_block .footer div {padding:0 7px 0 0; background:url(../images/warning_bg.png) 100% -29px no-repeat;}
+.warning_block .footer div div {height:7px; background:url(../images/warning_bg.png) 0 -22px repeat-x;}
+
