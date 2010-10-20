@@ -411,7 +411,12 @@ div.resource_panel div.ssd_resource_container div.resource-row div input.path-bo
 .usage_biggest + table  {clear:both;width:599px;}
 .usage_biggest + table td {padding:13px 0 0 3px;}
 
-.disk-item .usage_biggest + table  {clear:both;width:599px;}
+.usage_biggest-png {float:left;width:597px;height:31px;padding:0 1px;clear:both;position:relative;background:none;}
+.usage_biggest-png div {height:100%;position:absolute;left:0;top:0;background:none;}
+.usage_biggest-png div:first-child {width:599px !important;left:-1px;background:url(/images/usages.png) 0 0 no-repeat;z-index:8;}
+.usage_biggest-png i {position:absolute;top:-8px;display:block;width:1px;height:47px;font-size:0;line-height:0;background:#e43a1b;z-index:9;}
+
+.disk-item .usage_biggest + table  {clear:both;width:100%;}
 .disk-item .usage_biggest + table td {padding:13px 0 0 3px;color:#C19710;text-align:left;}
 .disk-item .usage_biggest + table td+td {color:#1878a2;text-align:center;}
 .disk-item .usage_biggest + table td+td+td {color:#000;text-align:right;}
@@ -945,7 +950,13 @@ html>/**/body #servers .list_button span, x:-moz-any-link, x:default {float:none
 .bucket_details .size-gauge .usage div {width:362px;height:15px;position:absolute;left:0px;top:0px;background:url(/images/ram_diagr_bg.png) 0 0 no-repeat;}
 .bucket_details .size-gauge table {width:100%;text-align:justify;line-height:1.3;}
 .bucket_details .size-gauge table td {padding:4px 0 0;text-align:right;font-size:10px;background:none;border:none;}
-.bucket_details .size-gauge .usage i {background:none;display:block;font-size:0;height:25px;line-height:0;position:absolute;;top:-5px;width:1px;}
+.bucket_details .size-gauge .usage i {background:none;display:block;font-size:0;height:25px;line-height:0;position:absolute;top:-5px;width:1px;}
+
+.bucket_details .size-gauge-png {width:362px;padding:0 1px;}
+.bucket_details .size-gauge-png .usage {height:15px;clear:both;position:relative;}
+.bucket_details .size-gauge-png .usage div {height:100%;position:absolute;left:0;top:0;}
+.bucket_details .size-gauge-png .usage div:first-child {width:364px !important;left:-1px;background:url(/images/usages.png) 0 -46px no-repeat;z-index:8;}
+.bucket_details .size-gauge-png .usage i {position:absolute;top:-5px;display:block;width:1px;height:25px;font-size:0;line-height:0;background:#e43a1b;z-index:9;}
 
 .bucket_details label.for-enable-persistence {padding-left:20px;}
 .bucket_details label.for-enable-persistence span {float:none;display:inline;margin-left:6px;}
