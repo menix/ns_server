@@ -1342,7 +1342,7 @@
         You have successfully installed the Membase Server.<br>This wizard will help you configure your cluster.
       </p>
       <div class="pat_10">
-        <input type="image" name="setup" value="Setup" class="submit next" onload="javascript:this.focus();" src="../images/welcome-setup-button.png" />
+        <input type="image" name="setup" value="Setup" class="submit next" src="../images/welcome-setup-button.png" />
       </div>
     </form>
     <div class="welcome-footer">
@@ -1423,7 +1423,6 @@
           </div>
           <p class="warning pat_10 join_cluster_dialog_errors_container"></p>
        </div>
-    <!-- </label> -->
       </div>
     </form>
     <div class="config-bottom">
@@ -1478,12 +1477,12 @@
         <label for="secure-password">Verify Password:</label>
         <input type="password" name="password" class="inp" id="secure-password-verify" maxlength="24" />
       </div>
-      <button type="submit" style="display:none;"></button>
-    </form>
+      <!--button type="submit" style="display:none;"></button-->
     <div class="config-bottom">
       <button name="finish" value="Finish" class="submit finish direction-button" id="step-3-finish" type="submit">Next</button>
       <button name="back" value="Back" class="submit back direction-button" id="step-3-back" type="button">Back</button>
     </div>
+    </form>
     <script type="text/javascript">
       $(function(){
         $('div.config-bottom button#step-3-finish').click(function (e) {
