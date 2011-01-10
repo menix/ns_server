@@ -243,15 +243,29 @@ h1 .nav a {font-size:11px; font-weight:bolder;}
 #analytics_main_graph { position: relative; width:742px; height:269px;}
 #analytics_main_graph_grid {position:relative; width:742px; height:269px;margin:0 auto 10px; }
 
-.analytics-small-graph {display:block; width:166px !important; height:61px !important; float:left; overflow:hidden; background:url(../images/mini_graph_bg.gif) 0 0 no-repeat; margin:0 12px 7px 12px; cursor:pointer; position:relative; text-decoration:none;}
+.analytics-small-graph {position:relative;overflow:hidden;float:left; width:166px !important; height:61px !important;margin:0 12px 7px 12px;background:url(../images/mini_graph_bg.gif) no-repeat; cursor:pointer;text-decoration:none;}
 
 .analytics_graph_main {/*height:300px; background:url(../images/devider_line_2.gif) 0 100% repeat-x #eeeeef;border-left:1px solid #dbdbdb; border-right:1px solid #dbdbdb;*/ padding:0 10px;}
 .graph_info_label {padding:3px; font-size:11px;position:absolute;top:-6px;left:30px;}
-.graph_nav {padding:6px 0 6px 5px;overflow:hidden;}
-.graph_nav .analytics-small-graph {float:left;overflow:hidden;width:174px !important;height:61px !important;background:url(../images/mini_graph_bg.gif) 0 0 no-repeat; margin:4px 7px; cursor:pointer; position:relative; text-decoration:none;}
+.graph_nav {padding:6px 0 6px 5px;}
+.graph_nav.withtotal {}
+.graph_nav .analytics-small-graph {overflow:visible;width:174px !important; margin:4px 7px;}
 .graph_nav .analytics-small-graph:hover {background-position:0 -122px;}
+.graph_nav .analytics-small-graph.selected {background-position:0 -61px;}
+.graph_nav .analytics-small-graph.warning {background-position:-174px 0;padding:0;}
+.graph_nav .analytics-small-graph.warning:hover {background-position:-174px -122px;}
+.graph_nav .analytics-small-graph.selected.warning {background-position:-174px -61px;}
+.graph_nav .analytics-small-graph.fault {background-position:-348px 0;}
+.graph_nav .analytics-small-graph.fault:hover {background-position:-348px -122px;}
+.graph_nav .analytics-small-graph.selected.fault {background-position:-348px -61px;}
 .graph_nav .analytics-small-graph span {background:none;margin:0;}
-.selected {background:url(../images/mini_graph_bg.gif) 0 -61px no-repeat !important; text-decoration:none !important;}
+.graph_nav .dim {opacity:.25;filter:alpha(opacity=25);}
+.graph_nav > div > input[type="checkbox"] {position:absolute;top:6px;left:6px;}
+.graph_nav > div > ins {position:absolute;bottom:6px;right:-5px;display:block;width:0;height:0;border-style:solid;border-width:5px 10px;border-color:transparent transparent transparent #0595fc;}
+.graph_nav > div > ins ul {position:absolute;top:-9px;left:2px;z-index:99;display:none;width:120px;font-size:11px;background:#fff;border:1px solid #aaa;-moz-box-shadow:4px 4px 6px 0 #aaa;}
+.graph_nav > div > ins:hover ul {display:block;}
+.graph_nav > div > ins ul li, .graph_nav > div > ins ul li a {padding:4px 6px 5px;color:#444245;}
+.graph_nav > div > ins ul li:hover, .graph_nav > div > ins ul li:hover a {background:#0595fc;color:#fff;}
 .graph_nav .spinner span {position:relative; width:150px !important; height:15px !important; padding:20px 0 0 0; font-size:11px; color:#839aa6; margin:0 0 0 8px; top:5px; background:url(../images/spinner/spinner_gr_nav.gif) 66px 0 no-repeat; text-align:center; line-height:12px !important;}
 .graph_nav .selected .spinner span {background:url(../images/spinner/spinner2_gr_nav.gif) 66px 0 no-repeat; color:#d8e0e5;}
 
