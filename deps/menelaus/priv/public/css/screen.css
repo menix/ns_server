@@ -247,13 +247,13 @@ h1 .nav a {font-size:11px; font-weight:bolder;}
 
 .analytics_graph_main {/*height:300px; background:url(../images/devider_line_2.gif) 0 100% repeat-x #eeeeef;border-left:1px solid #dbdbdb; border-right:1px solid #dbdbdb;*/ padding:0 10px;}
 .graph_info_label {padding:3px; font-size:11px;position:absolute;top:-6px;left:30px;}
-.graph_nav {position:relative;padding:6px 0 6px 5px;border-top:28px solid #fff;*zoom:1;}
+.graph_nav {position:relative;padding:6px 0 6px 5px;margin:35px 0 0;*zoom:1;}
 .graph_nav.withtotal {background:url(../images/bg_total.gif) 100% 0 repeat-y;}
-.graph_nav h3 {position:absolute;top:-20px;left:0;width:98%;margin:0 1%;font-size:14px;text-align:right;text-transform:uppercase;z-index:99;*zoom:1;}
+.graph_nav h3 {position:relative;top:-11px;left:0;width:97.4%;margin:-14px 1% 0;font-size:14px;text-align:right;text-transform:uppercase;z-index:99;*zoom:1;}
 .graph_nav h3 ins {float:left;width:0;height:0;margin:2px 0 0;border-style:solid;border-width:10px 10px 0 10px;border-color:#0595fc transparent transparent transparent;cursor:pointer;cursor:hand;}
-.graph_nav.closed {height:0;padding:0;}
+.graph_nav.closed {height:0;padding:0;border-bottom:12px solid #eeeeef;*border:none;}
 .graph_nav.closed > div {display:none !important;}
-.graph_nav.closed h3 ins {margin:-3px 0 0;border-width:10px 0 10px 10px;border-color:transparent transparent transparent #0595fc;}
+.graph_nav.closed h3 ins {margin:-3px 0 0 4px;border-width:10px 0 10px 10px;border-color:transparent transparent transparent #0595fc;}
 .graph_nav .analytics-small-graph {overflow:visible;width:174px !important;height:60px !important; margin:4px 7px 5px;}
 .graph_nav .analytics-small-graph:hover {background-position:0 -122px;z-index:90;}
 .graph_nav .analytics-small-graph.selected {background-position:0 -61px;}
@@ -267,15 +267,18 @@ h1 .nav a {font-size:11px; font-weight:bolder;}
 .graph_nav .dim {opacity:.25;filter:alpha(opacity=25);}
 .graph_nav > div > input[type="checkbox"] {position:absolute;top:6px;left:6px;}
 .graph_nav > div > ins {position:absolute;bottom:6px;right:0;z-index:98;display:block;width:0;height:0;border-style:solid;border-width:5px 5px 5px 10px;border-color:transparent transparent transparent #0595fc;}
-.graph_nav > div > ins ul {position:absolute;top:-9px;left:2px;z-index:99;display:none;width:120px;font-size:11px;background:#fff;border:1px solid #aaa;-moz-box-shadow:4px 4px 6px 0 #aaa;}
+.graph_nav > div > ins ul {position:absolute;top:-9px;left:2px;z-index:99;display:none;width:120px;font-size:11px;background:#fff;border:1px solid #aaa;
+							-moz-box-shadow:4px 4px 6px #aaa;-webkit-box-shadow:4px 4px 6px #aaa;box-shadow:4px 4px 6px #aaa;
+							filter:progid:DXImageTransform.Microsoft.shadow(direction=135, color=#aaaaaa, strength=5);}
 .graph_nav > div > ins:hover ul {display:block;}
 .graph_nav > div > ins ul li, .graph_nav > div > ins ul li a {padding:4px 6px 5px;color:#444245;}
 .graph_nav > div > ins ul li:hover, .graph_nav > div > ins ul li:hover a {background:#0595fc;color:#fff;}
 .graph_nav .spinner span {position:relative; width:150px !important; height:15px !important; padding:20px 0 0 0; font-size:11px; color:#839aa6; margin:0 0 0 8px; top:5px; background:url(../images/spinner/spinner_gr_nav.gif) 66px 0 no-repeat; text-align:center; line-height:12px !important;}
 .graph_nav .selected .spinner span {background:url(../images/spinner/spinner2_gr_nav.gif) 66px 0 no-repeat; color:#d8e0e5;}
-.graph_nav .vlabels {position:absolute;bottom:138px;left:-133px;color:#707070;font-size:13px;font-weight:bold;text-transform:uppercase;word-spacing:28px;
+.graph_nav .vlabels {position:absolute;top:21px;left:-13px;width:10px;height:246px;background:url(../images/vlabels.gif) no-repeat;text-indent:-999;overflow:hidden;font:0/0 serif;
+					/*bottom:138px;left:-133px;color:#707070;font-size:13px;font-weight:bold;text-transform:uppercase;word-spacing:28px;
 					-moz-transform:rotate(-90deg);-webkit-transform:rotate(-90deg);-ms-transform:rotate(-90deg);transform:rotate(-90deg);
-					*display:none;/*filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=6.123233995736766e-17, M12=1, M21=-1, M22=6.123233995736766e-17);zoom:1;*/}
+					*display:none;filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=6.123233995736766e-17, M12=1, M21=-1, M22=6.123233995736766e-17);zoom:1;*/}
 
 .analytics-small-graph .small_graph_block {width:168px; height:36px; margin:4px 0 0 3px;}
 .analytics-small-graph .small_graph_label {display:block; text-align:center; font-size:11px; color:#4e5557; padding:4px 0 0;}
