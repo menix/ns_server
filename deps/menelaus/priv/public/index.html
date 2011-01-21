@@ -1176,6 +1176,17 @@
             <div class="float_50" id="configure_stats_items_container">
             </div>
             <div class="template" id="configure_stats_items_template">
+			 <!-- for using new layout pls remove comment from css section on lines 605-610
+			 <h3>Server Resources</h3>
+			  <label class="item">
+                <input type="checkbox" name="" />
+                <span class="cnt"><span>Test</span></span>
+				</label>
+			  <label class="item">
+                <input type="checkbox" name="" />
+                <span class="cnt"><span>Test</span></span>
+				</label>
+			  <h3>Server Resources</h3> -->
               {% _.each(rows, function (item) { %}
               <label class="item">
                 <input type="checkbox" name="{%= h(item.name) %}" />

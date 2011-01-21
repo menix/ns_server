@@ -247,8 +247,8 @@ h1 .nav a {font-size:11px; font-weight:bolder;}
 
 .analytics_graph_main {/*height:300px; background:url(../images/devider_line_2.gif) 0 100% repeat-x #eeeeef;border-left:1px solid #dbdbdb; border-right:1px solid #dbdbdb;*/ padding:0 10px;}
 .graph_info_label {padding:3px; font-size:11px;position:absolute;top:-6px;left:30px;}
-.graph_nav {position:relative;padding:6px 0 6px 5px;margin:35px 0 0;*zoom:1;}
-.graph_nav.withtotal {background:url(../images/bg_total.gif) 100% 0 repeat-y;}
+.graph_nav {position:relative;padding:6px 0 6px 5px;margin:35px 0 0;background:url(../images/bg_total.gif) 100% 0 repeat-y;*zoom:1;}
+.graph_nav.withtotal {}
 .graph_nav h3 {position:relative;top:-11px;left:0;width:97.4%;margin:-14px 1% 0;font-size:14px;text-align:right;text-transform:uppercase;z-index:99;*zoom:1;}
 .graph_nav h3 ins {float:left;width:0;height:0;margin:2px 0 0;border-style:solid;border-width:10px 10px 0 10px;border-color:#0595fc transparent transparent transparent;cursor:pointer;cursor:hand;}
 .graph_nav.closed {height:0;padding:0;border-bottom:12px solid #eeeeef;*border:none;}
@@ -598,10 +598,16 @@ body.nojs #nojs_alert { display: block; width:960px; margin:40px auto 0;}
 #join_leave_switch.leave-possible #cluster_join_button { display:none; }
 
 .float_50 {padding:15px 0 0;}
-.float_50 .item {display:block; float:left; width:50%; min-height:35px; margin:0 0 5px 0;}
+.float_50 .item {float:left;width:50%;min-height:35px;margin:0 0 5px;}
 .float_50 .item input {float:left;*position:relative;*top:-3px;*left:-2px;}
-.float_50 .item .cnt {margin:0 10px 0 20px; font-size:11px; color:#777a81; display:block;}
-.float_50 .item .cnt span {font-size:12px; font-weight:bolder; color:#368dba; display:block; cursor:pointer;}
+.float_50 .item .cnt {display:block;margin:0 10px 0 20px;font-size:11px;color:#777a81;}
+.float_50 .item .cnt span {display:block;font-size:12px;font-weight:bolder;color:#368dba;cursor:pointer;}
+/*.float_50 {padding:8px 0 5px;}
+.float_50 h3 {clear:both;margin:0 0 10px;padding:10px 0 1px;font-size:14px;text-align:right;text-transform:uppercase;border-bottom:2px solid #333;*zoom:1;}
+.float_50 .item {float:left;width:23%;min-height:20px;margin:0 0 5px 2%;}
+.float_50 .item input {float:left;*position:relative;*top:-3px;*left:-2px;}
+.float_50 .item .cnt {overflow:hidden;display:block;height:13px;margin:0 10px 0 20px;font-size:11px;color:#777a81;}
+.float_50 .item .cnt span {display:block;font-size:12px;font-weight:bolder;color:#00a7df;cursor:pointer;}*/
 
 .stat_target_name {text-transform:none !important;}
 
